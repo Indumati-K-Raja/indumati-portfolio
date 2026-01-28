@@ -1,4 +1,4 @@
-:root {
+﻿:root {
     /* Colors - Neutral & Premium Palette */
     --bg-body: #ffffff;
     --bg-light: #f8f9fa;
@@ -20,14 +20,13 @@
     --font-heading: 'Inter', sans-serif;
     --font-body: 'Inter', sans-serif;
 
-    /* Shadows & Radii */
+    /* Shadows */
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
-    --radius-md: 12px;
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 
-    /* Transitions - Framer Style Spring */
-    --transition-framer: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-    --transition-base: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    /* Transitions */
+    --transition-base: all 0.3s ease;
 }
 
 /* Icons */
@@ -95,8 +94,7 @@ ul {
 }
 
 .bg-light {
-    background-color: #fafafc;
-    /* Slightly blue-tinted light neutral for contrast */
+    background-color: var(--bg-light);
 }
 
 .text-center {
@@ -313,22 +311,17 @@ ul {
 }
 
 .project-card {
-    background: rgba(93, 92, 255, 0.05);
-    /* Slightly more visible tint */
-    border: 1px solid rgba(99, 102, 241, 0.1);
-    border-radius: var(--radius-md);
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
     padding: 2rem;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    transition: var(--transition-framer);
+    transition: var(--transition-base);
 }
 
 .project-card:hover {
     border-color: var(--text-accent);
-    transform: scale(1.02) translateY(-5px);
     box-shadow: var(--shadow-md);
-    background: #fff;
+    transform: translateY(-5px);
 }
 
 .project-info h3 {
@@ -422,7 +415,7 @@ ul {
 }
 
 .cert-list li::before {
-    content: '→';
+    content: 'ΓåÆ';
     position: absolute;
     left: 0;
     color: var(--text-accent);
@@ -492,15 +485,14 @@ footer {
 }
 
 .education-card {
-    background: rgba(93, 92, 255, 0.05);
-    /* Matching color box */
+    background: #fff;
     border-radius: 12px;
     padding: 2rem;
-    border: 1px solid rgba(99, 102, 241, 0.1);
+    border: 1px solid var(--border-color);
     box-shadow: var(--shadow-sm);
     position: relative;
     overflow: hidden;
-    transition: var(--transition-framer);
+    transition: var(--transition-base);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -537,24 +529,7 @@ footer {
 }
 
 .cert-card embed {
-    height: 250px;
-    width: 100%;
-    object-fit: contain;
     border-radius: 4px;
     box-shadow: var(--shadow-sm);
     border: 1px solid var(--border-color);
-}
-
-/* Scroll Animations */
-.reveal {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
-    filter: blur(4px);
-}
-
-.reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-    filter: blur(0);
 }

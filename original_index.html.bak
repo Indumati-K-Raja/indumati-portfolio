@@ -1,0 +1,363 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfolio of Indumati K Raja - Java Full-Stack Developer & Software Engineer in Progress. specializing in backend systems and scalable applications." />
+  <title>Indumati K Raja | Java Full-Stack Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+  <div id="app">
+    <!-- Navigation injected by JS -->
+
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-content">
+        <span class="eyebrow">Hello, I'm</span>
+        <h1 class="hero-name">Indumati K Raja</h1>
+        <h2 class="hero-role">Java Full-Stack Developer <span class="highlight">in Progress</span></h2>
+        <p class="hero-statement">
+          Problem-solver. Backend-focused. Building real-world projects that matter.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <p>
+            I am a Computer Science & Engineering student with a deep passion for building robust backend systems and
+            scalable applications.
+            My journey is driven by a curiosity to understand how software powers the world, specifically through
+            <strong>Java</strong> and <strong>Spring Boot</strong>.
+          </p>
+          <p>
+            Currently, I am seeking internships and entry-level software engineering roles where I can apply my skills
+            in a real-world setting, learn from experienced mentors, and contribute to meaningful products.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Creative Education Section -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title">Education Snapshot</h2>
+        <div class="education-wrapper">
+          <div class="education-card">
+            <div class="edu-content">
+              <h3>B.E. Computer Science & Engineering</h3>
+              <p style="color: var(--text-secondary);">Your College/University Name</p>
+            </div>
+            <div class="edu-score">
+              CGPA 8.2
+            </div>
+          </div>
+          <div class="education-card">
+            <div class="edu-content">
+              <h3>Higher Secondary Certificate (HSC)</h3>
+              <p style="color: var(--text-secondary);">Your School Name</p>
+            </div>
+            <div class="edu-score">
+              85%
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </div>
+  </section>
+
+  <!-- Experience Section (Internship above Projects) -->
+  <section id="experience" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">Experience & Internships</h2>
+      <div class="timeline">
+        <!-- Experience 1 -->
+        <div class="timeline-item">
+          <div class="timeline-date">Internship</div>
+          <div class="timeline-content">
+            <h3>Frontend Support Intern</h3>
+            <h4>Kottravai Enterprises</h4>
+            <p>
+              Contributed to the development of responsive user interfaces using React.
+              Improved website accessibility and successfully collaborated with the design team to implement modern UI
+              components.
+            </p>
+            <div
+              style="margin-top: 1rem; max-width: 400px; background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid var(--border-color);">
+              <a href="./src/assets/cert.jpg" target="_blank" title="Click to view full size">
+                <img src="./src/assets/cert.jpg" alt="Internship Certificate"
+                  style="width: 100%; height: 250px; object-fit: contain; border-radius: 4px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); cursor: pointer; background-color: #fff;">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Experience 2 -->
+        <div class="timeline-item">
+          <div class="timeline-date">Job Simulation</div>
+          <div class="timeline-content">
+            <h3>Software Engineering Virtual Experience</h3>
+            <h4>JPMorgan Chase & Co.</h4>
+            <p>
+              Gained practical exposure to backend systems using Spring Boot and Apache Kafka.
+              Analyzed financial data feeds and implemented real-time data processing modules.
+            </p>
+            <div
+              style="margin-top: 1rem; max-width: 400px; background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid var(--border-color);">
+              <embed src="./src/assets/jpmorgan.pdf" type="application/pdf" width="100%" height="250px"
+                style="border-radius: 4px; border: 1px solid var(--border-color);" />
+              <a href="./src/assets/jpmorgan.pdf" target="_blank" class="btn-primary-sm"
+                style="display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; margin-top: 0.5rem; width: 100%; justify-content: center;">
+                View Full PDF
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1: AI Resume Analyzer -->
+        <article class="project-card">
+          <div class="project-info">
+            <h3>AI-Powered Resume Analyzer</h3>
+            <div class="project-meta">
+              <span class="tag">React</span>
+              <span class="tag">Java</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">AI/ML</span>
+            </div>
+            <div class="project-details">
+              <p><strong>Problem:</strong> Job seekers struggle to tailor resumes for specific job descriptions.</p>
+              <p><strong>Solution:</strong> An intelligent backend system that matches resumes to job descriptions
+                using NLP, providing actionable optimization scores.</p>
+              <p><strong>Tech Stack:</strong> Java, Spring Boot, OpenAI API</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Student Performance Analyzer -->
+        <article class="project-card">
+          <div class="project-info">
+            <h3>Student Performance Analyzer</h3>
+            <div class="project-meta">
+              <span class="tag">Java Swing</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Desktop App</span>
+            </div>
+            <div class="project-details">
+              <p><strong>Problem:</strong> Schools lack intuitive tools to track student growth over time.</p>
+              <p><strong>Solution:</strong> A desktop application visualizing academic trends, attendance, and grades
+                to help educators make data-driven decisions.</p>
+              <p><strong>Tech Stack:</strong> Java, Swing, JDBC, MySQL</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: SoftSell -->
+        <article class="project-card">
+          <div class="project-info">
+            <h3>SoftSell ΓÇô Software License Marketplace</h3>
+            <div class="project-meta">
+              <span class="tag">React</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">E-Commerce</span>
+            </div>
+            <div class="project-details">
+              <p><strong>Problem:</strong> Digital goods marketplaces often lack trust signals and clean,
+                conversion-optimized interfaces.</p>
+              <p><strong>Solution:</strong> A startup-ready platform for buying and selling software licenses,
+                featuring a high-trust UI, seamless navigation, and a modern, cohesive design system.</p>
+              <p><strong>Tech Stack:</strong> React, Tailwind CSS, Responsive Design</p>
+            </div>
+            <div class="project-preview"
+              style="margin-top: 1rem; border: 1px solid var(--border-color); border-radius: 4px; overflow: hidden; height: 300px;">
+              <iframe src="https://soft-sell-rouge.vercel.app/" title="SoftSell Preview"
+                style="width: 100%; height: 100%; border: none; pointer-events: none;"></iframe>
+            </div>
+            <div class="project-links" style="margin-top: 1.5rem;">
+              <a href="https://soft-sell-rouge.vercel.app/" target="_blank" class="btn-primary-sm">View Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: Banana Bliss -->
+        <article class="project-card">
+          <div class="project-info">
+            <h3>Banana Bliss ΓÇô Product Showcase</h3>
+            <div class="project-meta">
+              <span class="tag">Frontend Design</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">Branding</span>
+            </div>
+            <div class="project-details">
+              <p><strong>Problem:</strong> Many product landing pages fail to establish a strong brand identity or
+                visual hierarchy.</p>
+              <p><strong>Solution:</strong> A visually striking product showcase website emphasizing smooth layouts,
+                consistent color theory, and mobile responsiveness to drive engagement.</p>
+              <p><strong>Tech Stack:</strong> HTML5, CSS3, Modern UI Principles</p>
+            </div>
+            <div class="project-preview"
+              style="margin-top: 1rem; border: 1px solid var(--border-color); border-radius: 4px; overflow: hidden; height: 300px;">
+              <iframe src="https://banana-bliss-assignment.vercel.app/" title="Banana Bliss Preview"
+                style="width: 100%; height: 100%; border: none; pointer-events: none;"></iframe>
+            </div>
+            <div class="project-links" style="margin-top: 1.5rem;">
+              <a href="https://banana-bliss-assignment.vercel.app/" target="_blank" class="btn-primary-sm">View Live
+                Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5: Amazon Clone -->
+        <article class="project-card">
+          <div class="project-info">
+            <h3>Amazon Clone ΓÇô UI Engineering</h3>
+            <div class="project-meta">
+              <span class="tag">React</span>
+              <span class="tag">Component Architecture</span>
+              <span class="tag">Real-world UI</span>
+            </div>
+            <div class="project-details">
+              <p><strong>Problem:</strong> Replicating complex, data-dense interfaces requires precise component
+                structuring and layout management.</p>
+              <p><strong>Solution:</strong> A pixel-perfect frontend replica of the Amazon e-commerce interface,
+                demonstrating mastery of flexbox, grid systems, and reusable component architecture.</p>
+              <p><strong>Tech Stack:</strong> React, Vanilla CSS, Responsive Layouts</p>
+            </div>
+            <div class="project-preview"
+              style="margin-top: 1rem; border: 1px solid var(--border-color); border-radius: 4px; overflow: hidden; height: 300px;">
+              <iframe src="https://amazon-clone-code.vercel.app/" title="Amazon Clone Preview"
+                style="width: 100%; height: 100%; border: none; pointer-events: none;"></iframe>
+            </div>
+            <div class="project-links" style="margin-top: 1.5rem;">
+              <a href="https://amazon-clone-code.vercel.app/" target="_blank" class="btn-primary-sm">View Live
+                Demo</a>
+            </div>
+          </div>
+        </article>
+      </div>
+  </section>
+
+  <!-- Certifications Section (Below Projects) -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-full" style="width: 100%;">
+          <h2 class="section-title">Certifications</h2>
+          <div class="cert-grid"
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <article class="cert-card"
+              style="background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid var(--border-color);">
+              <h3 style="font-size: 1rem; margin-bottom: 0.5rem;">Scaler Java Fundamentals</h3>
+              <a href="./src/assets/scalar java certificate.png" target="_blank" title="Click to view full size">
+                <img src="./src/assets/scalar java certificate.png" alt="Scaler Java Verification"
+                  style="width: 100%; height: 250px; object-fit: contain; border-radius: 4px; box-shadow: var(--shadow-sm); cursor: pointer;">
+              </a>
+            </article>
+            <article class="cert-card"
+              style="background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid var(--border-color);">
+              <h3 style="font-size: 1rem; margin-bottom: 0.5rem;">IBM SkillsBuild ΓÇô SQL</h3>
+              <embed src="./src/assets/IBM DB0101EN Certificate _ IBM SkillsBuild.pdf" type="application/pdf"
+                width="100%" height="250px" style="border-radius: 4px; border: 1px solid var(--border-color);" />
+              <a href="./src/assets/IBM DB0101EN Certificate _ IBM SkillsBuild.pdf" target="_blank"
+                class="btn-primary-sm"
+                style="display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; margin-top: 0.5rem; justify-content: center; width: 100%;">
+                View Full PDF
+              </a>
+            </article>
+            <article class="cert-card"
+              style="background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid var(--border-color);">
+              <h3 style="font-size: 1rem; margin-bottom: 0.5rem;">Naan Mudhalvan Program</h3>
+              <embed src="./src/assets/NM_Certificate (8).pdf" type="application/pdf" width="100%" height="250px"
+                style="border-radius: 4px; border: 1px solid var(--border-color);" />
+              <a href="./src/assets/NM_Certificate (8).pdf" target="_blank" class="btn-primary-sm"
+                style="display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; margin-top: 0.5rem; justify-content: center; width: 100%;">
+                View Full PDF
+              </a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="container text-center">
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="contact-text">
+        I am ready to translate my passion for code into real-world impact. If you are looking for a dedicated
+        engineer to contribute to your team's vision, let's connect.
+      </p>
+
+      <div class="contact-wrapper"
+        style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 2rem;">
+        <div class="direct-contact">
+          <a href="mailto:indumatikraja@gmail.com" class="btn btn-primary btn-lg">
+            <span>Email Me Directly</span>
+          </a>
+          <p style="margin-top: 0.8rem; font-size: 0.9rem; color: var(--text-secondary);">
+            If the button doesn't work, email me at: <strong>indumatikraja@gmail.com</strong>
+          </p>
+        </div>
+
+        <div class="social-connect">
+          <p style="margin-bottom: 1rem; color: var(--text-secondary);">Or connect with me on socials</p>
+          <div class="social-buttons" style="display: flex; justify-content: center; gap: 1rem;">
+            <a href="https://linkedin.com/in/indumati-raja" target="_blank" class="btn btn-secondary"
+              aria-label="LinkedIn">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </a>
+            <a href="https://github.com" target="_blank" class="btn btn-secondary" aria-label="GitHub">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Indumati K Raja. Built with code & passion.</p>
+    </div>
+  </footer>
+  </div>
+  <script type="module" src="./src/js/main.js"></script>
+</body>
+
+</html>
